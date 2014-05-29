@@ -3,16 +3,21 @@ public class Clientes {
 private String NombreClientes;
 private String ApellidoClientes;
 private String Direccion;
-private float precio;
-private int fecha;
-
+private float PrecioClientes;
+private int FechaEnvio;
+private int Numero;
+private int Puerta;
+private String Letra;
 	public Clientes() {
 		//inicializacion
 		NombreClientes="";
 		ApellidoClientes="";
 		Direccion="";
-		precio=0;
-		fecha=0;
+		PrecioClientes=0;
+		FechaEnvio=0;
+		Numero=0;
+		Puerta=0;
+		Letra="";
 	}
 
 	
@@ -29,5 +34,44 @@ private int fecha;
 	}
 	public String CogerApellido(){
 		return ApellidoClientes;
+	}
+	public void guardarDireccion(String direc){
+		Direccion=direc;
+	}
+	public String cogerDireccion(){
+		return Direccion;
+	}
+	public void guardarprecio (float precio){
+		PrecioClientes=precio;
+	}
+	public float cogerprecio (){
+		return PrecioClientes;
+	}
+	public void guardarfecha(int fecha){
+		FechaEnvio=fecha;
+	}
+	public int cogerfecha(){
+		return FechaEnvio;
+	}
+	public void guardarnumero(int num){
+		Numero=num;
+	}
+	public int cogernumero(){
+		return Numero;
+	}
+	public void guardarpuerta(int puert){
+		Puerta=puert;
+	}
+	public int cogerpuerta(){
+		return Puerta;
+	}
+	public void guardarletra(String letr){
+		Letra=letr;
+	}
+	public String cogerletra(){
+		return Letra;
+	}
+	public String toString(){
+		return NombreClientes;
 	}
 }
